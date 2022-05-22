@@ -5,7 +5,7 @@ import java.util.Scanner;
 import static java.lang.Integer.parseInt;
 
 /*
-Восьмеричный конвертер
+Г‚Г®Г±ГјГ¬ГҐГ°ГЁГ·Г­Г»Г© ГЄГ®Г­ГўГҐГ°ГІГҐГ°
 */
 
 public class Solution {
@@ -31,7 +31,7 @@ public class Solution {
                 intResult = Integer.parseInt(second[0]) + Integer.parseInt(second[1]);
                 if(intResult < 21 && intResult > 0)
                     System.out.println(intResult);
-                else System.out.println("Вы вышли за пределы значений");
+                else System.out.println("Г‚Г» ГўГ»ГёГ«ГЁ Г§Г  ГЇГ°ГҐГ¤ГҐГ«Г» Г§Г­Г Г·ГҐГ­ГЁГ©");
             }
             catch (NumberFormatException e) {
                 try {
@@ -41,7 +41,7 @@ public class Solution {
                     else System.out.println(answer1[110]);
                 }
                 catch (ArrayIndexOutOfBoundsException a){
-                    System.out.println("Вы ввели некорректные данные");
+                    System.out.println("Г‚Г» ГўГўГҐГ«ГЁ Г­ГҐГЄГ®Г°Г°ГҐГЄГІГ­Г»ГҐ Г¤Г Г­Г­Г»ГҐ");
                 }
             }
         } else if (first.indexOf("-") > 0) {
@@ -50,7 +50,7 @@ public class Solution {
                 intResult = Integer.parseInt(second[0]) - Integer.parseInt(second[1]);
                 if(intResult > -10 && intResult < 10)
                     System.out.println(intResult);
-                else System.out.println("Вы вышли за пределы значений");
+                else System.out.println("Г‚Г» ГўГ»ГёГ«ГЁ Г§Г  ГЇГ°ГҐГ¤ГҐГ«Г» Г§Г­Г Г·ГҐГ­ГЁГ©");
             }
             catch (NumberFormatException e) {
                 try {
@@ -61,7 +61,7 @@ public class Solution {
                         System.out.println(answer1[110]);
                 }
                 catch (ArrayIndexOutOfBoundsException a){
-                    System.out.println("Вы ввели некорректные данные");
+                    System.out.println("Г‚Г» ГўГўГҐГ«ГЁ Г­ГҐГЄГ®Г°Г°ГҐГЄГІГ­Г»ГҐ Г¤Г Г­Г­Г»ГҐ");
                 }
             }
         } else if (first.indexOf("*") > 0) {
@@ -70,7 +70,7 @@ public class Solution {
                 intResult = Integer.parseInt(second[0]) * Integer.parseInt(second[1]);
                 if(intResult < 101 && intResult > -101)
                     System.out.println(intResult);
-                else System.out.println("Вы вышли за пределы значений");
+                else System.out.println("Г‚Г» ГўГ»ГёГ«ГЁ Г§Г  ГЇГ°ГҐГ¤ГҐГ«Г» Г§Г­Г Г·ГҐГ­ГЁГ©");
             }
             catch (NumberFormatException e){
                 try {
@@ -80,7 +80,7 @@ public class Solution {
                     else System.out.println(answer1[110]);
                 }
                 catch (ArrayIndexOutOfBoundsException a){
-                    System.out.println("Вы ввели некорректные данные");
+                    System.out.println("Г‚Г» ГўГўГҐГ«ГЁ Г­ГҐГЄГ®Г°Г°ГҐГЄГІГ­Г»ГҐ Г¤Г Г­Г­Г»ГҐ");
                 }
             }
         } else if (first.indexOf("/") > 0) {
@@ -89,7 +89,7 @@ public class Solution {
                 intResult = Integer.parseInt(second[0]) / Integer.parseInt(second[1]);
                 if(intResult < 11 && intResult > 0)
                     System.out.println(intResult);
-                else System.out.println("Вы вышли за пределы значений");
+                else System.out.println("Г‚Г» ГўГ»ГёГ«ГЁ Г§Г  ГЇГ°ГҐГ¤ГҐГ«Г» Г§Г­Г Г·ГҐГ­ГЁГ©");
             }
             catch (NumberFormatException e){
                 try {
@@ -99,12 +99,12 @@ public class Solution {
                     else System.out.println(answer1[110]);
                 }
                 catch (ArrayIndexOutOfBoundsException a){
-                    System.out.println("Вы ввели некорректные данные");
+                    System.out.println("Г‚Г» ГўГўГҐГ«ГЁ Г­ГҐГЄГ®Г°Г°ГҐГЄГІГ­Г»ГҐ Г¤Г Г­Г­Г»ГҐ");
                 }
             }
         } else {
             second = new String[1];
-            System.out.println("Вы ввели неверные данные, вы мразь");
+            System.out.println("Г‚Г» ГўГўГҐГ«ГЁ Г­ГҐГўГҐГ°Г­Г»ГҐ Г¤Г Г­Г­Г»ГҐ");
         }
     }
     public static int RomeToDecimar(String str) {
